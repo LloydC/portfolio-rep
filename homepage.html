@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="description" content="portfolio">
     <meta name="author" content="Lloyd Chambrier">
 
-    <link rel="icon" href="../../favicon.ico">
+  <!--   <link rel="icon" href="../../favicon.ico"> -->
+
+<!--   Add a favicon here when you can! -->
 
     <title>Lloyd Chambrier Site</title>
 
     <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
 
@@ -91,11 +95,12 @@ ul.rig li img {
 }
 ul.rig li h3 {
   margin: 0 0 5px;
+  text-align: center;
 }
 ul.rig li p {
   font-size: .9em;
   line-height: 1.5em;
-  color: #999;
+  color: #988;
 }
 /* class for 2 columns */
 ul.rig.columns-2 li {
@@ -127,50 +132,85 @@ ul.rig.columns-4 li {
   }
 }
 
+#desk {
+    background: url('images/photo-14.jpeg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-    /* For mobile phones: */
-[class*="col-"] {
+#transition-2{
+    background: url('images/photo-15.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.divider {
+    cursor: pointer;
+    height: 350px;
+    position: relative;
     width: 100%;
 }
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
+
+.overlay {
+   
+    height: 100%;
+    width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+.table {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table;
 }
 
-
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
 </style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
 
-  
+    <script src="script/soundmanager2.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script>
+
+
+
+// soundManager.setup({
+//   url: 'swf',
+//   onready: function() {
+//     var mySound = soundManager.createSound({
+//       id: 'aSound',
+//       url: 'song/Boogie-On-Reggae-Woman.mp3'
+//     });
+
+//   mySound.play({
+//   // start position
+//   from: 500,
+//   // end position
+//   to: 22200,
+//   onstop: function() {
+//     soundManager._writeDebug('sound stopped at position ' + this.position);
+//     // note that the "to" target may be over-shot by 200+ msec, depending on polling and other factors.
+//   }
+// });
+//     // mySound.play();
+//   },
+//   ontimeout: function() {
+//     // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+//   }
+// });
+// </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -204,234 +244,209 @@ ul.rig.columns-4 li {
     </nav>
 
      <img src="images/picjumbo.com_HNCK4400.jpg" alt="bridge_picture" class="responsive-image">
+
 <br>
 <br>
 
-<!-- <div class="list-group">
-  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
-  <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
-  <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
-  <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
-</div> -->
 
     <div class="container" >
 
       <div class = "row">
-         
-             <div class = "col-1" id = "about" ></div>
-               <!--  <h1>Where Am I</h1> -->
-              <br>
-              <br>
-              <br>
-            
-            
-                  <div class="col-10">
+             
+              <div class="col-sm-6" id = "about">
 
-                        <center>
+                <center>
 
-                          <h1>About me</h1>
+                <h1>About me</h1>
 
-                          <div class="circular" ></div>
+                <div class="circular"> </div>
 
-                        </center>
+                </center>
 
-                           <br>
+                <br>
 
-                        <p>I'm a Full-Stack Developer based in Brooklyn, I enjoy creating websites and web applications as much as I like finding solutions to complex problems. Currently, I work at the New York Code and Design Academy where I continue to improve my skills while helping students through our wide-range of classes.</p>
+                 <p>I'm a Full-Stack Developer based in Brooklyn, I enjoy creating websites and web applications as much as I like finding solutions to complex problems. Currently, I work at the New York Code and Design Academy where I continue to improve my skills while helping students through our wide-range of classes.</p>
 
-                        <p>My hobbies are diversed as I love to try out new things, I'm a Brazilian Jiu Jitsu practicioner, a Tricker and a Freerunner enthusiast and I also do Yoga when my mood calls for it. </p>
+                  <p>My hobbies are diversed as I love to try out new things, I'm a Brazilian Jiu Jitsu practicioner, a Tricker and a Freerunner enthusiast and I also do Yoga when my mood calls for it. </p>
 
-                        <p> I play the guitar, read books and like to discover new spaces and restaurants with my friends. </p>
+                  <p> I play the guitar, read books and like to discover new spaces and restaurants with my friends. </p>
                           
-                          <br>  
+                  <br>  
 
-                          <center>
+                  <center>
 
-                        <a href="#contact"><button type="button" class="btn btn-info ">Contact me</button></a>
-                        <button type="button" class="btn btn-default">Resume</button>
+                  <a href="#contact"><button type="button" class="btn btn-success ">Contact me</button></a>
+                  <button type="button" class="btn btn-info">Resume</button>
 
-                        <br>
+                  <br>
 
-                         <blockquote class="blockquote">
-                            <p>
-                              "We are what we repeatedly do. Excellence, then, is not an act, but a habit." 
-                            </p>
-                            <footer>
-                              Aristotle
-                            </footer>
+                  <blockquote class="blockquote">
+                  <p>
+                  "We are what we repeatedly do. Excellence, then, is not an act, but a habit." 
+                  </p>
 
-                          </blockquote>
+                  <footer>
+                    Aristotle
+                  </footer>
 
-                          </center> 
-                  </div>
-                   <div class = "col-1"></div>
+                  </blockquote>
 
-            </div>
+                  </center> 
 
-            </div>
+              </div>
 
-            <div class="container">
+              <div class = "col-sm-6" style="text-align:center;margin-top:50px;">
 
-        <div class="row">
+             <!--  <h1>Services </h1> -->
 
-            <h1>Services </h1>
+              <br>
 
-                <div class="col-12" style="text-align:center;">
-                  
-                  <h2>HTML&CSS</h2>
+                    <h2>HTML&CSS</h2>
 
-                   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
                    70%
                    </div>
+                   
 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-          
-
-                <h2>Javascript</h2>
+                    <h2>Javascript</h2>
 
 
-                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
                    80%
                    </div>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   
     
-                  <h2>Ruby On Rails</h2>
+                    <h2>Ruby On Rails</h2>
 
-                     <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                     <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
                    90%
-                   </div>
+                   </div> 
+                
+              </div>
+        </div>
 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br>
 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>      
-          
-          </div>
+        <div id = "desk" class="divider">
+
+            <div class="overlay">
+
+                <div class="table">
+                  <p>Transitional row</p>
+                </div>
+
+            </div>
 
         </div>
 
+
         <div class="row">
 
-                <div class="col-1" id="projects">
-                
-                </div>
-
-                <div class="col-11">
+            <div class="col-12" id = "projects">
                      
-                <center><h1>Latest Works</h1></center>
+              <center><h1>Latest Works</h1></center>
 
-                <ul class="rig columns-3">
+              <ul class="rig columns-3">
                   
-                  <li>
+                <li>
 
                    <a href="http://www.google.com" target="_new"><img src="images/sunset2.jpg"/></a> 
-                    <h3>A Beautiful Sunset</h3>
-                    <p>Description</p>
+                    <center><h3>A Beautiful Sunset</h3></center>
+                    <p>Description: This website is a Portfolio of images for the French photographer Chris Benoit.</p>
+                    <br>
+                    <p>Used HTML,CSS and Javascript for Front End</p>
+                    <br>
+                    <p>http://www.beautifulsunset.com</p>
 
-                  </li>
+                </li>
 
-                  <li>
+                <li>
                     <img src="images/bridge.jpg">
                     <h3>Brooklyn Bridge</h3>
                     <p>Description</p>
 
-                  </li>
+                </li>
 
-                  <li>
+                <li>
                     
                     <img src="images/download.jpeg">
                     <h3>Manhattan Skyline</h3>
                     <p>Description</p>
 
-                  </li>
+                </li>
                  
-                  <li>
+                <li>
 
                   <img src="images/Greenpoint_park.jpg">
                     <h3>A Park by the Hudson River</h3>
                     <p>Description</p>
 
-                  </li>
+                </li>
 
-                  <li>
+                <li>
                   
                   <img src="images/download.jpeg">
                     <h3>Manhattan Skyline</h3>
                     <p>Description</p>
 
-                  </li>
+                </li>
                  
-                  <li>
+                <li>
 
                   <img src="images/Greenpoint_park.jpg">
                     <h3>A Park by the Hudson River</h3>
                     <p>Description</p>
 
-                  </li>
+                </li>
 
-                </ul>
+              </ul>
                     
                 </div>
-        </div>
+          </div>
 
-              <br>
+          <div id = "transition-2" class="divider">
 
-                <div class="row" style="text-align:center;">
-                  
-                   <div class = "col-12" id = "contact" >
-                     
-                      <div class = 'container grow'>
-                
-                        <script type="text/javascript" >
-                        var zr19d3e0mtqn0m;(function(d, t) {
-                        var s = d.createElement(t), options = {
-                        'userName':'lchamb01',
-                        'formHash':'zr19d3e0mtqn0m',
-                        'autoResize':true,
-                        'height':'505',
-                        'async':true,
-                        'host':'wufoo.com',
-                        'header':'show',
-                        'ssl':true};
-                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-                        s.onload = s.onreadystatechange = function() {
-                        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-                        try { 
-                        zr19d3e0mtqn0m = new WufooForm();zr19d3e0mtqn0m.initialize(options);zr19d3e0mtqn0m.display(); 
-                        } 
-                        catch (e) {}
-                        };
-                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-                        })
-                        (document, 'script');
-              
-                        </script>
-    
-                      <div id="wufoo-zr19d3e0mtqn0m" >
-                      Fill out my <a href="https://lchamb01.wufoo.com/forms/zr19d3e0mtqn0m">online form</a>.
-                      </div>
+            <div class="overlay">
 
-                    </div>
-
-                   </div>
-
-                 
+                <div class="table">
+                  <p>Transitional row</p>
                 </div>
 
-                <footer>
-                  <h6><center>&copy; Copyright 2015 Lloyd Chambrier. All Rights Reserved.</center></h6>
+            </div>
 
-                </footer>
-
-       
-      
         </div>
+
+          <br>         
+
+        
+
+        <div class="container-fluid" style="background-color:purple;">
+
+              <div class="row">
+
+                
+                        
+                      <!-- <div class = "col-4">
+
+                      </div>
+
+                      <div class = "col-4">
+
+                      </div>
+
+                      <div class = "col-4"> -->
+
+                      <h6><center>&copy; Copyright 2015 Lloyd Chambrier. All Rights Reserved.</center></h6>
+
+                     <!--  </div> -->
+               
+
+              </div>
+
+        </div>
+
+      </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
