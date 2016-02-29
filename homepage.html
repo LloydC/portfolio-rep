@@ -16,7 +16,7 @@
     <title>Lloyd Chambrier Site</title>
 
     <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -35,23 +35,22 @@
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    background: url(images/IMG_0333.jpg) no-repeat;
+    background: url(images/profile/IMG_0333.jpg) no-repeat;
     background-size: 100% 100%;
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    position: relative;
     /*top: 200px;
     left: 10px;*/
-    position: relative;
 }
 
 .container2{
-width: 400px;
-height: 400px;
-float: center;
-/*margin: 0 auto;*/
-
-background: blue;
-opacity:0.8;
+    width: 400px;
+    height: 400px;
+    float: center;
+    background: blue;
+    opacity:0.8;
+    /*margin: 0 auto;*/
 }
 
 .grow {
@@ -133,7 +132,7 @@ ul.rig.columns-4 li {
 }
 
 #desk {
-    background: url('images/photo-14.jpeg') no-repeat center center;
+    background: url('images/backgrounds/photo-14.jpeg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -141,7 +140,7 @@ ul.rig.columns-4 li {
 }
 
 #transition-2{
-    background: url('images/photo-15.jpg') no-repeat center center;
+    background: url('images/backgrounds/photo-15.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -149,68 +148,50 @@ ul.rig.columns-4 li {
 }
 
 .divider {
-    cursor: pointer;
-    height: 350px;
-    position: relative;
-    width: 100%;
+  max-width: 100%;
+  height: 350px;    
+/*cursor: pointer;*/
+/*position: relative;*/
+    
 }
 
 .overlay {
-   
-    height: 100%;
-    width: 100%;
+   width: 100%;
+    height: 100%;  
 }
 
 .table {
-    position: absolute;
     width: 100%;
     height: 100%;
+    position: absolute;
     display: table;
 }
 
 .container-full {
-  margin: 0 auto;
-  width: 100%;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 </style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
-    <script src="script/soundmanager2.js"></script>
-
+     <!-- <script src="js/ie-emulation-modes-warning.js"></script> -->
+<!-- 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 
-<script>
-
-
-
-// soundManager.setup({
-//   url: 'swf',
-//   onready: function() {
-//     var mySound = soundManager.createSound({
-//       id: 'aSound',
-//       url: 'song/Boogie-On-Reggae-Woman.mp3'
-//     });
-
-//   mySound.play({
-//   // start position
-//   from: 500,
-//   // end position
-//   to: 22200,
-//   onstop: function() {
-//     soundManager._writeDebug('sound stopped at position ' + this.position);
-//     // note that the "to" target may be over-shot by 200+ msec, depending on polling and other factors.
-//   }
-// });
-//     // mySound.play();
-//   },
-//   ontimeout: function() {
-//     // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
-//   }
-// });
-// </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -224,10 +205,10 @@ ul.rig.columns-4 li {
     <nav class="navbar navbar-inverse navbar-fixed-top" style = "opacity: 0.8;">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar">Home</span>
+            <span class="icon-bar">About</span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Lloyd Chambrier</a>
@@ -243,7 +224,7 @@ ul.rig.columns-4 li {
       </div>
     </nav>
 
-     <img src="images/picjumbo.com_HNCK4400.jpg" alt="bridge_picture" class="responsive-image">
+     <img src="images/backgrounds/picjumbo.com_HNCK4400.jpg" alt="bridge_picture" class="responsive-image">
 
 <br>
 <br>
@@ -276,7 +257,7 @@ ul.rig.columns-4 li {
                   <center>
 
                   <a href="#contact"><button type="button" class="btn btn-success ">Contact me</button></a>
-                  <button type="button" class="btn btn-info">Resume</button>
+                  <button type="button" class="btn btn-info"><a href="images/profile/LloydChambrier-Resume.pdf">Resume</a></button>
 
                   <br>
 
@@ -297,9 +278,18 @@ ul.rig.columns-4 li {
 
               <div class = "col-sm-6" style="text-align:center;margin-top:50px;">
 
+              <img src="images/logos/noun_126792_cc.png" width ="100px" height="100px">
+
+
+              <img src="images/logos/noun_155462_cc.png" width ="100px" height="100px">
+              <img src="images/logos/noun_155464_cc.png" width ="100px" height="100px">
+              <img src="images/logos/noun_38026_cc.png" width ="100px" height="100px">
+              <img src="images/logos/noun_48689_cc.png" width ="100px" height="100px">
+              <img src="images/logos/noun_98071_cc.png" width ="100px" height="100px">
+
              <!--  <h1>Services </h1> -->
 
-              <br>
+              <!-- <br>
 
                     <h2>HTML&CSS</h2>
 
@@ -321,8 +311,18 @@ ul.rig.columns-4 li {
                      <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
                    90%
                    </div> 
+
+                   <h2>UI/UX Design</h2>
+
+
+                    <div class="progress-bar progress-bar-progress progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
+                   80%
+                   </div> -->
                 
               </div>
+
+          </div>
+
         </div>
 
             <br>
@@ -332,7 +332,7 @@ ul.rig.columns-4 li {
             <div class="overlay">
 
                 <div class="table">
-                  <p>Transitional row</p>
+                  
                 </div>
 
             </div>
@@ -350,7 +350,7 @@ ul.rig.columns-4 li {
                   
                 <li>
 
-                   <a href="http://www.google.com" target="_new"><img src="images/sunset2.jpg"/></a> 
+                   <a href="http://www.google.com" target="_new"><img src="images/scenery/sunset2.jpg"/></a> 
                     <center><h3>A Beautiful Sunset</h3></center>
                     <p>Description: This website is a Portfolio of images for the French photographer Chris Benoit.</p>
                     <br>
@@ -361,7 +361,7 @@ ul.rig.columns-4 li {
                 </li>
 
                 <li>
-                    <img src="images/bridge.jpg">
+                    <img src="images/scenery/bridge.jpg">
                     <h3>Brooklyn Bridge</h3>
                     <p>Description</p>
 
@@ -369,32 +369,8 @@ ul.rig.columns-4 li {
 
                 <li>
                     
-                    <img src="images/download.jpeg">
+                    <img src="images/scenery/downloaded.jpg">
                     <h3>Manhattan Skyline</h3>
-                    <p>Description</p>
-
-                </li>
-                 
-                <li>
-
-                  <img src="images/Greenpoint_park.jpg">
-                    <h3>A Park by the Hudson River</h3>
-                    <p>Description</p>
-
-                </li>
-
-                <li>
-                  
-                  <img src="images/download.jpeg">
-                    <h3>Manhattan Skyline</h3>
-                    <p>Description</p>
-
-                </li>
-                 
-                <li>
-
-                  <img src="images/Greenpoint_park.jpg">
-                    <h3>A Park by the Hudson River</h3>
                     <p>Description</p>
 
                 </li>
@@ -404,42 +380,56 @@ ul.rig.columns-4 li {
                 </div>
           </div>
 
-          <div id = "transition-2" class="divider">
 
-            <div class="overlay">
+           <div id = "transition-2" class="divider">
 
-                <div class="table">
-                  <p>Transitional row</p>
-                </div>
+                      <div class="overlay">
+
+                          <div class="table">
+                           
+                          </div>
+
+                      </div>
+
+          </div>
+          
+          <br>   
+
+           <div class="row">
+
+            <div class="col-12" id = "contact">
+                     
+              <center><h1>Contact me</h1></center>
+
+               <center>
+                     <a href="https://github.com/LloydC"><img src="images/logos/GitHub-Mark.png" height="100px"></a> 
+                      <a href="mailto:lloydchambrier@gmail.com" target="_blank"><img src="images/logos/email-icon.png" height="100px"></a>
+        
+                      <a href="https://www.linkedin.com/in/lloyd-chambrier-b939687" target="_blank"><img src="images/logos/linkedin-logo-square.png" height="100px"></a>
+                      </center>
 
             </div>
 
-        </div>
-
-          <br>         
+          </div>      
 
         
 
-        <div class="container-fluid" style="background-color:purple;">
+        <div class="container-fluid" style="background-color:gray;height:200px;">
 
               <div class="row">
 
-                
-                        
-                      <!-- <div class = "col-4">
+                   <div class="col-12">
+                      
+                     <!--  <center>
+                      <img src="images/logos/GitHub-Mark.png" height="100px">
+                      <img src="images/logos/email-icon.png" height="100px">
+                      <img src="images/logos/linkedin-logo-square.png" height="100px">
+                      </center> -->
 
-                      </div>
+                      <h4><center>&copy; Copyright 2015 Lloyd Chambrier. All Rights Reserved.</center></h4>
 
-                      <div class = "col-4">
+                    </div>
 
-                      </div>
-
-                      <div class = "col-4"> -->
-
-                      <h6><center>&copy; Copyright 2015 Lloyd Chambrier. All Rights Reserved.</center></h6>
-
-                     <!--  </div> -->
-               
 
               </div>
 
@@ -451,9 +441,9 @@ ul.rig.columns-4 li {
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+   <!--  // <script src="js/bootstrap.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+     <!-- <script src="js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
 </html>
