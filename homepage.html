@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,175 +15,11 @@
     <title>Lloyd Chambrier Site</title>
 
     <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-
-<style type="text/css">
-  
-   .responsive-image{
-        max-width:100%;
-        height:auto;
-    }
-
-    .circular {
-    width: 260px;
-    height: 280px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(images/profile/IMG_0333.jpg) no-repeat;
-    background-size: 100% 100%;
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    position: relative;
-    /*top: 200px;
-    left: 10px;*/
-}
-
-.container2{
-    width: 400px;
-    height: 400px;
-    float: center;
-    background: blue;
-    opacity:0.8;
-    /*margin: 0 auto;*/
-}
-
-.grow {
-  display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.grow:hover, .grow:focus, .grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-    
-ul.rig {
-  list-style: none;
-  font-size: 0px;
-  margin-left: -2.5%; /* should match li left margin */
-}
-ul.rig li {
-  display: inline-block;
-  padding: 10px;
-  margin: 0 0 2.5% 2.5%;
-  background: #fff;
-  border: 1px solid #ddd;
-  font-size: 16px;
-  font-size: 1rem;
-  vertical-align: top;
-  box-shadow: 0 0 5px #ddd;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-ul.rig li img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 0 10px;
-}
-ul.rig li h3 {
-  margin: 0 0 5px;
-  text-align: center;
-}
-ul.rig li p {
-  font-size: .9em;
-  line-height: 1.5em;
-  color: #988;
-}
-/* class for 2 columns */
-ul.rig.columns-2 li {
-  width: 47.5%; /* this value + 2.5 should = 50% */
-}
-/* class for 3 columns */
-ul.rig.columns-3 li {
-  width: 30.83%; /* this value + 2.5 should = 33% */
-}
-/* class for 4 columns */
-ul.rig.columns-4 li {
-  width: 22.5%; /* this value + 2.5 should = 25% */
-}
- 
-@media (max-width: 480px) {
-  ul.grid-nav li {
-    display: block;
-    margin: 0 0 5px;
-  }
-  ul.grid-nav li a {
-    display: block;
-  }
-  ul.rig {
-    margin-left: 0;
-  }
-  ul.rig li {
-    width: 100% !important; /* over-ride all li styles */
-    margin: 0 0 20px;
-  }
-}
-
-#desk {
-    background: url('images/backgrounds/photo-14.jpeg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#transition-2{
-    background: url('images/backgrounds/photo-15.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.divider {
-  max-width: 100%;
-  height: 350px;    
-/*cursor: pointer;*/
-/*position: relative;*/
-    
-}
-
-.overlay {
-   width: 100%;
-    height: 100%;  
-}
-
-.table {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: table;
-}
-
-.container-full {
-    width: 100%;
-    margin: 0 auto; 
-}
-
-.footer {
-    width: 100%;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: black;
-    text-align: center;
-}
-
-.max-width {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-</style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
      <!-- <script src="js/ie-emulation-modes-warning.js"></script> -->
@@ -201,6 +36,80 @@ ul.rig.columns-4 li {
   </head>
 
   <body>
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+
+     <script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:0.2,y:-0.1,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InWave,$Top:$Jease$.$InWave,$Clip:$Jease$.$OutQuad},$Outside:true,$Round:{$Left:1.3,$Top:2.5}},
+              {$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.1,0.9],$Top:[0.1,0.9]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Outside:true,$Round:{$Left:0.8,$Top:2.5}},
+              {$Duration:1500,x:0.2,y:-0.1,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InWave,$Top:$Jease$.$InWave,$Clip:$Jease$.$OutQuad},$Outside:true,$Round:{$Left:0.8,$Top:2.5}},
+              {$Duration:1500,x:0.3,y:-0.3,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Outside:true,$Round:{$Left:0.8,$Top:2.5}},
+              {$Duration:1800,x:1,y:0.2,$Delay:30,$Cols:10,$Rows:5,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$Reverse:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2050,$Easing:{$Left:$Jease$.$InOutSine,$Top:$Jease$.$OutWave,$Clip:$Jease$.$InOutQuad},$Outside:true,$Round:{$Top:1.3}},
+              {$Duration:1000,$Delay:30,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2049,$Easing:$Jease$.$OutQuad},
+              {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Easing:$Jease$.$OutQuad},
+              {$Duration:1000,y:-1,$Cols:12,$Formation:$JssorSlideshowFormations$.$FormationStraight,$ChessMode:{$Column:12}},
+              {$Duration:1000,x:-0.2,$Delay:40,$Cols:12,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:260,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Outside:true,$Round:{$Top:0.5}},
+              {$Duration:2000,y:-1,$Delay:60,$Cols:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:$Jease$.$OutJump,$Round:{$Top:1.5}}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+
+  <!-- NAVBAR-->
 
     <nav class="navbar navbar-inverse navbar-fixed-top" style = "opacity: 0.8;">
       <div class="container">
@@ -224,17 +133,15 @@ ul.rig.columns-4 li {
       </div>
     </nav>
 
-     <img src="images/backgrounds/picjumbo.com_HNCK4400.jpg" alt="bridge_picture" class="responsive-image">
-
+     <img src="images/backgrounds/picjumbo.com_HNCK4400.jpg" class="responsive-image" alt="design_table" >
+    
 <br>
 <br>
-
+<!-- ABOUT ME-->
 
     <div class="container" >
-
-      <div class = "row">
-             
-              <div class="col-sm-6" id = "about">
+        <div class = "row">
+             <div class="col-sm-12" id = "about">
 
                 <center>
 
@@ -275,174 +182,189 @@ ul.rig.columns-4 li {
                   </center> 
 
               </div>
+            </div>
 
-              <div class = "col-sm-6" style="text-align:center;margin-top:50px;">
+<!-- ABOUT ME/SKILLS AND BACKGROUND-->
+            
+            <div class = "row">
+                <div class = "col-sm-4" >
 
-              <img src="images/logos/noun_126792_cc.png" width ="100px" height="100px">
+                  <h3>Work Methodology</h3>
 
+                  <img src="images/logos/noun_126792_cc.png" width ="100px" height="100px">
+                  <img src="images/logos/noun_155462_cc.png" width ="100px" height="100px">
 
-              <img src="images/logos/noun_155462_cc.png" width ="100px" height="100px">
-              <img src="images/logos/noun_155464_cc.png" width ="100px" height="100px">
-              <img src="images/logos/noun_38026_cc.png" width ="100px" height="100px">
-              <img src="images/logos/noun_48689_cc.png" width ="100px" height="100px">
-              <img src="images/logos/noun_98071_cc.png" width ="100px" height="100px">
+                  <p>Understand the problem, determine the best solution and translate it into code.</p>
 
-             <!--  <h1>Services </h1> -->
+                </div>
 
-              <!-- <br>
+                <div class = "col-sm-4" >
 
-                    <h2>HTML&CSS</h2>
+                   <h3>Skills</h3>
 
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
-                   70%
-                   </div>
-                   
+                  <img src="images/logos/noun_155464_cc.png" width ="100px" height="100px">
+                  <img src="images/logos/noun_38026_cc.png" width ="100px" height="100px">
 
-                    <h2>Javascript</h2>
+                  <ul>
+                    <li>HTML&CSS</li>
+                    <li>Javascript</li>
+                    <li>Ruby</li>
+                  </ul>
 
+                  <ul>
+                    <li>Bootstrap</li>
+                    <li>Rails</li>
+                    <li>Node.js</li>
+                  </ul>
 
-                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
-                   80%
-                   </div>
+                </div>
+
+                <div class = "col-sm-4" >
+
+                   <h3>Background</h3>
+
+                  <img src="images/logos/noun_48689_cc.png" width ="100px" height="100px">
+                  <img src="images/logos/noun_98071_cc.png" width ="100px" height="100px">
                   
-    
-                    <h2>Ruby On Rails</h2>
+                  <p> Bachelor in Computer Science and Software Engineering.</p>
 
-                     <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
-                   90%
-                   </div> 
-
-                   <h2>UI/UX Design</h2>
-
-
-                    <div class="progress-bar progress-bar-progress progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; margin-left:120px;">
-                   80%
-                   </div> -->
-                
-              </div>
-
-          </div>
-
+                </div>
+            </div>             
         </div>
 
             <br>
 
-        <div id = "desk" class="divider">
-
+<!-- DIVIDER DIV-->
+        <div class="divider" id ="desk" >
             <div class="overlay">
-
-                <div class="table">
-                  
-                </div>
-
+                <div class="table"></div>
             </div>
-
         </div>
 
+<!-- PROJECTS-->
 
+      <div class="container"></div>
         <div class="row">
-
-            <div class="col-12" id = "projects">
-                     
+            <div class="col-md-6 col-md-offset-3" id = "projects">
+      
               <center><h1>Latest Works</h1></center>
+              <br>
+              <!-- FIRST PROJECT CARD-->
 
-              <ul class="rig columns-3">
-                  
-                <li>
-
-                   <a href="http://www.google.com" target="_new"><img src="images/scenery/sunset2.jpg"/></a> 
-                    <center><h3>A Beautiful Sunset</h3></center>
-                    <p>Description: This website is a Portfolio of images for the French photographer Chris Benoit.</p>
-                    <br>
-                    <p>Used HTML,CSS and Javascript for Front End</p>
-                    <br>
-                    <p>http://www.beautifulsunset.com</p>
-
-                </li>
-
-                <li>
-                    <img src="images/scenery/bridge.jpg">
-                    <h3>Brooklyn Bridge</h3>
-                    <p>Description</p>
-
-                </li>
-
-                <li>
-                    
-                    <img src="images/scenery/downloaded.jpg">
-                    <h3>Manhattan Skyline</h3>
-                    <p>Description</p>
-
-                </li>
-
-              </ul>
-                    
-                </div>
-          </div>
-
-
-           <div id = "transition-2" class="divider">
-
-                      <div class="overlay">
-
-                          <div class="table">
-                           
-                          </div>
-
+                    <div class="card">
+                      <div class="card-image">
+                          <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+                                <!-- Loading Screen -->
+                                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                </div>
+                                <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+                                    <div data-p="112.50" style="display: none;">
+                                        <img data-u="image" src="images/projects/first.png" />
+                                    </div>
+                                    <div data-p="112.50" style="display: none;">
+                                        <img data-u="image" src="images/projects/second.png" />
+                                    </div>
+                                    <div data-p="112.50" style="display: none;">
+                                        <img data-u="image" src="images/projects/fourth.png" />
+                                    </div>
+                                   <!--  <div data-p="112.50" style="display: none;">
+                                        <img data-u="image" src="img/04.jpg" />
+                                    </div> -->
+                                </div>
+                                <!-- Bullet Navigator -->
+                                <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+                                    <div data-u="prototype" style="width:12px;height:12px;"></div>
+                                </div>
+                                <!-- Arrow Navigator -->
+                                <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
+                                <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+                                <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+                            </div>
+                          <span class="card-title">Travelorg</span>
                       </div>
-
-          </div>
-          
-          <br>   
-
-           <div class="row">
-
-            <div class="col-12" id = "contact">
-                     
-              <center><h1>Contact me</h1></center>
-
-               <center>
-                     <a href="https://github.com/LloydC"><img src="images/logos/GitHub-Mark.png" height="100px"></a> 
-                      <a href="mailto:lloydchambrier@gmail.com" target="_blank"><img src="images/logos/email-icon.png" height="100px"></a>
-        
-                      <a href="https://www.linkedin.com/in/lloyd-chambrier-b939687" target="_blank"><img src="images/logos/linkedin-logo-square.png" height="100px"></a>
-                      </center>
-
-            </div>
-
-          </div>      
-
-        
-
-        <div class="container-fluid" style="background-color:gray;height:200px;">
-
-              <div class="row">
-
-                   <div class="col-12">
                       
-                     <!--  <center>
-                      <img src="images/logos/GitHub-Mark.png" height="100px">
-                      <img src="images/logos/email-icon.png" height="100px">
-                      <img src="images/logos/linkedin-logo-square.png" height="100px">
-                      </center> -->
-
-                      <h4><center>&copy; Copyright 2015 Lloyd Chambrier. All Rights Reserved.</center></h4>
-
-                    </div>
-
-
+                      <div class="card-content">
+                          <p>A Ruby On Rails application built to store informations about places that the users wish to travel to. Built using HTML,CSS and Ruby.</p>
+                      </div>
+                      
+                      <div class="card-action">
+                          <a href="https://github.com/LloydC/CoderPack/tree/master/Final-project/app1" target="new_blank"><img src="images/logos/GitHub-Mark.png" height="50px"></a>
+                          <!-- <a href="#" target="new_blank">Link</a>
+                          <a href="#" target="new_blank">Link</a>
+                          <a href="#" target="new_blank">Link</a>
+                          <a href="#" target="new_blank">Link</a> -->
+                      </div>
+                  </div>
               </div>
 
-        </div>
+              <!-- SECOND PROJECT CARD-->
 
-      </div>
+         <!--    <div class="col-md-6 col-md-offset-3" id = "projects">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-responsive" src="images/scenery/bridge.jpg">
+                            <span class="card-title">Second Website</span>
+                        </div>
+                        
+                        <div class="card-content">
+                            <p>Cards for display in portfolio style material design by Google.</p>
+                        </div>
+                        
+                        <div class="card-action">
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                        </div>
+                    </div>
+                </div> -->
+          </div>
+<!-- SECOND DIVIDER DIV-->
+           <div id = "transition-2" class="divider">
+              <div class="overlay"></div>
+          </div>
+          
+          <br>
+<!-- CONTACT-->
+        <div class=" container">
+           <div class="row">
+              <div class="col-12" id = "contact">       
+              <center><h1>Contact me</h1></center>
+              <center>
+                      <a href="mailto:lloydchambrier@gmail.com" target="_blank">
+                      <img src="images/logos/email-icon.png" height="100px">
+                      </a>
+                      <a href="https://www.linkedin.com/in/lloyd-chambrier-b939687" target="_blank">
+                      <img src="images/logos/linkedin-logo-square.png" height="100px">
+                      </a>
+                      <a href="https://github.com/LloydC" target="_blank">
+                      <img src="images/logos/GitHub-Mark.png" height="100px">
+                      </a>
+              </center>
+            </div>
+          </div> 
+        </div>     
 
+        <div class="container-fluid" style="background-color:gray;height:150px;">
+              <div class="row">
+                   <div class="col-12">
+                      <h4><center>&copy; Copyright 2016 Lloyd Chambrier. All Rights Reserved.</center></h4>
 
+                  </div>
+              </div>
+          </div>
+
+<script>
+        jssor_1_slider_init();
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-   <!--  // <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
      <!-- <script src="js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
